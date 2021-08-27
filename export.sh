@@ -4,7 +4,7 @@
 rm ./pubic.tar.gz
 
 # Build site files
-hugo -D
+/usr/local/bin/hugo -D
 
 # Compress all in public
 tar -czvf public.tar.gz ./public/
