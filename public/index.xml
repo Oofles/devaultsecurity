@@ -13,6 +13,110 @@
     
     
     <item>
+      <title>Blog: Analyzing Logs with the Linux Sort Sandwich</title>
+      <link>/blog/2021/09/04/analyzing-logs-with-the-linux-sort-sandwich/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/09/04/analyzing-logs-with-the-linux-sort-sandwich/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;analyzing-logs-with-the-linux-sort-sandwich&#34;&gt;Analyzing Logs with the Linux Sort Sandwich&lt;/h1&gt;
+&lt;p&gt;In a perfect world, we&amp;rsquo;d always have access to a nice pretty graphical interface where all our data is co-located and happy. Unfortunately, that&amp;rsquo;s not always the case. Here I&amp;rsquo;ll walk through a really simple way to help with filtering or sorting through text-based logs using built-in Linux tools.&lt;/p&gt;
+&lt;h2 id=&#34;tldr---the-result-up-front&#34;&gt;TL/DR - The Result Up Front!&lt;/h2&gt;
+&lt;p&gt;Using Zeek (Bro) logs as an example, here are the top user-agents seen throughout all HTTP conversations:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat http.log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; zeek-cut user_agent &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; uniq -c &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/static/ua-complete.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;reading-the-logs&#34;&gt;Reading the Logs&lt;/h2&gt;
+&lt;p&gt;In the example, I&amp;rsquo;ll be using Zeek logs which is an amazing open-source tool for analyzing network conversations. (Reference: &lt;a href=&#34;https://zeek.org/&#34;&gt;https://zeek.org/&lt;/a&gt;) However, the same technique can be used for any text-based logs since we&amp;rsquo;ll be using built-in Linux tools!&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start by simply reading the file with the &lt;code&gt;cat&lt;/code&gt; (or concatenate) command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat http.log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/static/cat-http.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gross! Let&amp;rsquo;s try a different approach:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;less -S http.log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/static/less-http.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ah, much cleaner - now we can see what we&amp;rsquo;re dealing with! Zeek logs are organized by tab-delimited columns. It makes lining up the data with their categories a little bit more complicated, but now we can see all kinds of useful data we might want metrics on.&lt;/p&gt;
+&lt;h2 id=&#34;extracting-a-field-or-column&#34;&gt;Extracting a Field or Column&lt;/h2&gt;
+&lt;p&gt;Zeek makes this process extremely easy if you know the field name, so we&amp;rsquo;ll look at that first. The &lt;code&gt;zeek-cut&lt;/code&gt; command will remove all columns and additional data points except the column you&amp;rsquo;ve specified.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat http.log | zeek-cut user_agent&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/static/zeekcut-ua.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Awesome! But what if you aren&amp;rsquo;t using Zeek? No worries - the &lt;code&gt;cut&lt;/code&gt; command does the same thing, but allows you to specify a field (or column) number and any delimiter!&lt;/p&gt;
+&lt;p&gt;Same approach, but using &lt;code&gt;cut&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat http.log | cut -f 13 -d &amp;quot;	&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt; = allows you to specify a field (or column number). In this case, I just counted and found that the user-agent field was the 13th column from the left.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-d&lt;/code&gt; = allows you to specify a delimiter. Since Zeek logs use tab delimiters, we actually don&amp;rsquo;t need to specify anything and &lt;code&gt;cut&lt;/code&gt; will automatically split it up properly! However, the delimiter can be anything you want it to be (dots, spaces, colons, semi-colons, etc.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sort-sandwich&#34;&gt;Sort Sandwich!&lt;/h2&gt;
+&lt;p&gt;Now that we&amp;rsquo;ve extracted the targeted field, we can use the &amp;ldquo;sort sandwich&amp;rdquo; to quick table of counted unique values.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sort&lt;/code&gt; = sorts lines of text alphanumerically (no surprise here!)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt; = reverses the sort so higher numbers appear on top&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;uniq&lt;/code&gt; = de-duplicates lines of text and reports only unique values&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c&lt;/code&gt; = counts the number of times that unique value was seen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;cat http.log | zeek-cut user_agent | sort | uniq -c | sort -r&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/static/ua-complete.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here we can see all the unique user-agents seen throughout the captured traffic preempted by how many times each of these user-agents were used!&lt;/p&gt;
+&lt;h3 id=&#34;why-sort-twice&#34;&gt;Why sort twice?&lt;/h3&gt;
+&lt;p&gt;This is an interesting problem! The &lt;code&gt;uniq&lt;/code&gt; command does not read through an entire file and then give you unique values, it instead takes a top-down approach. Meaning, duplicate values must be directly next to each other.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at an example. Here we&amp;rsquo;ve got a sample text file with three columns.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat sample.txt&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;/static/cat-sample.png&#34; alt=&#34;image&#34; width=&#34;500&#34;/&gt;
+&lt;br&gt;
+&lt;br&gt;
+There are duplicates, so let&#39;s try and de-duplicate the file and count the results.
+&lt;p&gt;&lt;code&gt;cat sample.txt | uniq -c&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;/static/uniq-sample.png&#34; alt=&#34;image&#34; width=&#34;600&#34;/&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;Even though Vader shows up multiple times, we still see duplicate entries because it&amp;rsquo;s only getting rid of values if they are directly next to each other. To fully emphasize the point, let&amp;rsquo;s a look when we sort it first.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat sample.txt | sort | uniq -c&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;/static/sort-uniq-sample.png&#34; alt=&#34;image&#34; width=&#34;600&#34;/&gt;
+&lt;br&gt;
+&lt;br&gt; 
+Beautiful! As your files get larger, being able to see top and bottom value counts becomes pretty important, so we&#39;d better sort it once more at the end!
+&lt;p&gt;&lt;code&gt;cat sample.txt | sort | uniq -c | sort&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;/static/ss-sample.png&#34; alt=&#34;image&#34; width=&#34;700&#34;/&gt;
+&lt;br&gt;
+&lt;br&gt; 
+&lt;h3 id=&#34;ahhh-the-spaces-and-unnecessary-lines&#34;&gt;Ahhh! The Spaces and Unnecessary Lines!&lt;/h3&gt;
+&lt;p&gt;You may have noticed in the previous example that the column headers and blank lines are counted in the output. Using &lt;code&gt;grep&lt;/code&gt; and the inverse option (&lt;code&gt;-v&lt;/code&gt;), we can get rid of those lines!&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -v &amp;quot;column&amp;quot;&lt;/code&gt; = removes any lines containing the word &amp;ldquo;column&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Spaces are a bit more complicated, so without getting into regular expressions and how to format this out, I&amp;rsquo;ll just give you the syntax that works!&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -v &#39;^[[:space:]]*$&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;All together:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat sample.txt | grep -v &amp;quot;column&amp;quot; | grep -v &#39;^[[:space:]]*$&#39; | sort | uniq -c | sort&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/static/remove-spaces.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;other-examples&#34;&gt;Other Examples&lt;/h2&gt;
+&lt;p&gt;Top IPs (most conversations) seen separated by application protocol. Note: Zeek has the ability to perform port-independent protocol detection, meaning that it will identify the application protocol being used regardless if it&amp;rsquo;s being seen over the &amp;ldquo;standard&amp;rdquo; port associated with that protocol.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat conn.log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; zeek-cut id.orig_h service &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; uniq -c &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/static/ss-ip-service.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Looking for HTTP POST Methods and where that data is going.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat http.log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; zeek-cut method host uri &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; uniq -c &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/static/ss-post-host-uri.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Performing long-tail analysis on TLS Certificates.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat ssl.log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; zeek-cut issuer &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; uniq -c &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sort -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/static/ss-ssl-issuer.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: PowerShell - Counting Items in a CSV</title>
       <link>/blog/2020/08/29/powershell-counting-items-in-a-csv/</link>
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
