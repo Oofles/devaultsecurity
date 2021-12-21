@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "7f41a27c34f9d6c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4dde11f45beca6c0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/en/blog/engineering/index-on-ingest-vs-search.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "118de4fb89f62bb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a963bd1042d49853",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d076a787b72d496",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f3e995f394f1b36c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "elasticsearch",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "daeb2b6ad5e2378d",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2595f6de597be76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1546b520984dcb4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/en/blog/engineering/index-on-ingest-vs-search.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4dde11f45beca6c0",
+  "lastOpenFiles": [
+    "content/en/blog/engineering/index-on-ingest-vs-search.md",
+    "content/en/about/_index.md",
+    "content/en/blog/engineering/_index.md",
+    "README.md",
+    "content/en/search.md",
+    "content/en/featured-background.png",
+    "content/en/docs/Concepts/_index.md",
+    "content/en/docs/Contribution guidelines/_index.md",
+    "content/en/docs/Examples/_index.md",
+    "content/en/docs/Getting started/example-page.md"
+  ]
+}

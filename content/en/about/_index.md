@@ -73,14 +73,13 @@ menu:
 {{% /blocks/lead %}}
 
 {{% blocks/lead %}}
-<h1 class="text-center">Elasticsearch</h1>
-<h5 class="text-center">Aug 2019 - Present</h5>
+<h1 class="text-center">Pluralsight</h1>
+<h5 class="text-center">Oct 2021 - Present</h5>
 
 <br>
 
-I currently work as an Education Architect for <a href="https://www.elastic.co" style="color: purple;"><u>Elastic</u></a> performing security consulting and education primarily in the federal space. I am constantly developing new security curriculum focused around **threat hunting** and **incident response**. Check out some of the courses I've authored here: <a href="https://www.elastic.co/training/private-training" style="color: purple;"><u>Private Training</u></a>.
+I currently work as a Sr. Security Author  for <a href="https://www.pluralsight.com/" style="color: purple;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. Check out some of the courses I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: purple;"><u>Private Training</u></a>.
 
-I also serve as a community manager for the <a href="https://www.meetup.com/Jacksonville-Elasticsearch-Meetup-Group/" style="color: purple;"><u>Jacksonville Elastic Meetup Group</u></a>. 
 {{% /blocks/lead %}}
 
 
@@ -93,11 +92,23 @@ I also serve as a community manager for the <a href="https://www.meetup.com/Jack
 
 I am also a current member of the Florida Air National Guard. I work as a cyber security analyst and incident responder for the <u>[601st Air Operations Center's](https://www.1af.acc.af.mil/Library/Fact-Sheets/Display/Article/289621/601st-air-and-space-operations-center/)</u> Mission Defense Team.
 
-Experience here includes tools such as Snort, Bro, Elastic, deep packet analysis with Wireshark and tcpdump, and numerous other open-source tools for continuous monitoring and Blue Team operations.
+Experience here includes tools such as Snort, Zeek (Bro), Elastic, deep packet analysis with Wireshark and tcpdump, Arkime (Moloch), and numerous other open-source tools for continuous monitoring and Blue Team operations.
 
 I developed the operational training plan for AFNORTH's cyber security teams focused on air defense mission systems.
 
 {{< /blocks/lead >}}
+		  
+		  
+{{% blocks/lead %}}
+<h1 class="text-center">Elasticsearch</h1>
+<h5 class="text-center">Aug 2019 - Oct 2021</h5>
+
+<br>
+		  
+I previously worked as an Education Architect for <a href="https://www.elastic.co" style="color: purple;"><u>Elastic</u></a> performing security consulting and education primarily in the federal space. I am constantly developing new security curriculum focused around **threat hunting** and **incident response**. Check out some of the courses I've authored here: <a href="https://www.elastic.co/training/private-training" style="color: purple;"><u>Private Training</u></a>.
+
+I also served as a community manager (and remain an active member) for the <a href="https://www.meetup.com/Jacksonville-Elasticsearch-Meetup-Group/" style="color: purple;"><u>Jacksonville Elastic Meetup Group</u></a>. 
+{{% /blocks/lead %}}
 
 
 
@@ -114,5 +125,20 @@ Prior to working at Elastic, I worked as a Solutions Engineer for a small startu
 Here I was a content contributer and educator of tailored courses for Cyber Security Operators in industry and the Department of Defense. I also performed consulting for Elastic deployments and threat hunting inside the Elastic Stack.
 
 In August 2019, Perched was acquired by Elastic and it's been an awesome journey ever since!
+
+{{< /blocks/lead >}}
+
+		  
+{{< blocks/lead >}}
+
+<h1 class="text-center">Harris Corporation</h1>
+<h5 class="text-center">Dec 2011 - Sep 2016</h5>
+
+
+<br>
+
+My life prior to full-time military and security operations had me down a different path. Honestly, I'm suprised you are still reading at this point, but thanks for sticking with me! 
+
+At Harris I began my programming background working with a team developing a Java application delivering live geo-spatial visualizations of military assets. This application also gave me the opportunity to develop visualizations for the SOCOM Wargame Center and drive the system (a 20'x32' 3D floor display) for International and US Cabinet-level events.
 
 {{< /blocks/lead >}}
