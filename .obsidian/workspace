@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/en/blog/engineering/index-on-ingest-vs-search.md",
+            "file": "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "8cfa5deaa5ff2672",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/blog/engineering/index-on-ingest-vs-search.md",
+                "file": "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +99,15 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
+    "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
+    "content/en/blog/scripting/ua-complete.png",
+    "Pasted image 20211221132424.png",
+    "content/en/blog/scripting/analyzing-logs-sort-sandwich.md",
     "content/en/blog/engineering/index-on-ingest-vs-search.md",
     "content/en/about/_index.md",
     "content/en/blog/engineering/_index.md",
     "README.md",
     "content/en/search.md",
-    "content/en/featured-background.png",
-    "content/en/docs/Concepts/_index.md",
-    "content/en/docs/Contribution guidelines/_index.md",
-    "content/en/docs/Examples/_index.md",
-    "content/en/docs/Getting started/example-page.md"
+    "content/en/featured-background.png"
   ]
 }

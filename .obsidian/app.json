@@ -1,4 +1,10 @@
 {
   "showUnsupportedFiles": true,
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "alwaysUpdateLinks": true,
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "Zeek",
+    "tcpdump"
+  ]
 }
