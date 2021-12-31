@@ -6,5 +6,8 @@
   "spellcheckDictionary": [
     "Zeek",
     "tcpdump"
-  ]
+  ],
+  "legacyEditor": false,
+  "livePreview": true,
+  "promptDelete": false
 }
