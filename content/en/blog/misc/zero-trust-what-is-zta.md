@@ -39,7 +39,7 @@ Within 30 days of publication, agencies were required to designate a lead for im
 
 This is a much needed, but very aggressive approach to forcing compliance and ensuring Federal agencies are following good security practices. While guidelines are provided, the details of actually accomplishing the tasks within this mandate leaves the expertise to individual agencies, many of which don't have the necessary skills or experience. For example, one strategic goal is to have a complete inventory of every device it operates with the ability to prevent, detect, and respond to incidents on any one of those devices. Consider your own environment and how far away you might be from accomplishing that goal. The largest gap to actually implementing ZTA is delivering the necessary education to the individuals that need it. 
 
-## Alt - Next Steps?
+## Next Steps
 Despite this blog being focused on U.S. Federal policy, the techniques and overall strategy goes back to implementing good security practices. Whether you are reading this as part of a mandatory implementation or just want to get a better understanding of Zero Trust Architecture to improve your security posture, I hope this reference serves as a useful starting place on your ZTA journey. 
 
 If you'd like to learn more, check out [Pluralsight's Zero Trust Path](https://www.pluralsight.com/paths/zero-trust-architecture-zta)
