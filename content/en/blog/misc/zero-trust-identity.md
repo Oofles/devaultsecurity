@@ -6,6 +6,8 @@ description: >
   Understanding the first of CISA's five ZTA pillars: Identity
 ---
 
+# Zero Trust Strategy: Part 2 - Identity
+
 Part 1 of the Zero Trust Strategy Blog Series can be found here: [Zero Trust Strategy: What is Zero Trust Architecture?](https://www.devaultsecurity.com/blog/2022/04/05/zero-trust-strategy-what-is-zero-trust-architecture/). This blog series will work to break down the important details from the [Federal zero trust architecture (ZTA) strategy memorandum](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)  and hopefully provide some useful resources to assist with the necessary implementation of ZTA. 
 
 In Part 2, we'll focus on the first of CISA's five pillars: Identity. Identity is all about being able to manage users and validate whether they have authenticated and authorized access to the necessary applications or resources. You may even already have some of these controls implemented. The main distinction for Zero Trust Architecture involves expanding your identity control and being able to restrict access at a application layer vs. control at the network layer. For example, it is not sufficient to have a user login once and then be given full access to all applications and files within an environment. 
