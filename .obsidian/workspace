@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/en/blog/misc/zero-trust-what-is-zta.md",
+            "file": "content/en/blog/misc/zero-trust-identity.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/blog/misc/zero-trust-what-is-zta.md",
+                "file": "content/en/blog/misc/zero-trust-identity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
+    "content/en/blog/misc/zero-trust-identity.md",
+    "content/en/blog/scripting/powershell-counting-csv-items.md",
+    "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
     "content/en/blog/misc/zero-trust-what-is-zta.md",
     "content/en/blog/scripting/analyzing-logs-sort-sandwich.md",
-    "content/en/blog/_index.md",
     "content/en/blog/misc/_index.md",
+    "blog/misc/zero-trust-what-is-zta.md",
+    "content/en/blog/_index.md",
     "content/en/blog/scripting/_index.md",
-    "content/en/blog/engineering/_index.md",
-    "content/en/blog/engineering/tap-vs-span.md",
-    "content/en/blog/engineering/index-on-ingest-vs-search.md",
-    "static/ua-complete.png.md",
-    "Pasted image 20211231163851.png"
+    "content/en/blog/engineering/_index.md"
   ]
 }
