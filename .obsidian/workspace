@@ -9,10 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/en/blog/misc/zero-trust-identity.md",
+            "file": "content/en/_index.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
+        }
+      },
+      {
+        "id": "33bdc70b7065ad79",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/blog/misc/zero-trust-identity.md",
+                "file": "content/en/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +97,15 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
-    "content/en/blog/misc/zero-trust-identity.md",
-    "content/en/blog/scripting/powershell-counting-csv-items.md",
-    "content/en/blog/scripting/zeek-scripting-file-extraction-with-filtering.md",
-    "content/en/blog/misc/zero-trust-what-is-zta.md",
-    "content/en/blog/scripting/analyzing-logs-sort-sandwich.md",
-    "content/en/blog/misc/_index.md",
-    "blog/misc/zero-trust-what-is-zta.md",
-    "content/en/blog/_index.md",
-    "content/en/blog/scripting/_index.md",
-    "content/en/blog/engineering/_index.md"
+    "content/en/_index.md",
+    "content/en/about/_index.md",
+    "content/en/docs/_index.md",
+    "content/en/docs/add-training-resources/_index.md",
+    "content/en/community/_index.md",
+    "content/en/about/featured-background.png",
+    "themes/docsy/assets/icons/logo.png",
+    "themes/docsy/assets/icons/logo.svg",
+    "themes/docsy/static/favicons/android-36x36.png",
+    "themes/docsy/static/favicons/android-48x48.png"
   ]
 }

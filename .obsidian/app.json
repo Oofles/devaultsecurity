@@ -8,6 +8,8 @@
     "tcpdump"
   ],
   "legacyEditor": false,
-  "livePreview": true,
-  "promptDelete": false
+  "livePreview": false,
+  "promptDelete": false,
+  "foldHeading": false,
+  "foldIndent": false
 }
