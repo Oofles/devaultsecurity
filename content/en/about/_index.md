@@ -61,7 +61,7 @@ I developed the operational training plan for AFNORTH's cyber security teams foc
 <h1 class="text-center">Elasticsearch</h1>
 <h5 class="text-center">Aug 2019 - Oct 2021</h5>
 <br>  <br>
-I previously worked as an Education Architect for <a href="https://www.elastic.co" style="color: #00FF00;"><u>Elastic</u></a> performing security consulting and education primarily in the federal space. I am constantly developing new security curriculum focused around **threat hunting** and **incident response**. Check out some of the courses I've authored here: <a href="https://www.elastic.co/training/private-training" style="color: #00FF00;"><u>Private Training</u></a>.
+I previously worked as an Education Architect for <a href="https://www.elastic.co" style="color: #00FF00;"><u>Elastic</u></a> performing security consulting and education primarily in the federal space. I am constantly developing new security curriculum focused around threat hunting and incident response. Check out some of the courses I've authored here: <a href="https://www.elastic.co/training/private-training" style="color: #00FF00;"><u>Private Training</u></a>.
 <br><br>
 I also served as a community manager (and remain an active member) for the <a href="https://www.meetup.com/Jacksonville-Elasticsearch-Meetup-Group/" style="color: #00FF00;"><u>Jacksonville Elastic Meetup Group</u></a>. 
 {{% /blocks/lead %}}
