@@ -8,8 +8,8 @@ description: >
 
 # Zero Trust Strategy: Part 3 - Devices
 Parts 1 and 2 can be found here:
-- [Zero Trust Strategy: What is Zero Trust Architecture?](https://www.pluralsight.com/blog/security-professional/zero-trust-strategy-what-is-zero-trust-architecture)
-- [Zero Trust Strategy: Part 2 - Identity](https://www.pluralsight.com/blog/security-professional/zero-trust-strategy-identity-?exp=3)
+- [Zero Trust Strategy: What is Zero Trust Architecture?](https://www.devaultsecurity.com/blog/2022/04/05/zero-trust-strategy-what-is-zero-trust-architecture/)
+- [Zero Trust Strategy: Part 2 - Identity](https://www.devaultsecurity.com/blog/2022/05/02/zero-trust-strategy-identity/)
 
 Continuing on in Part 3, we'll be taking a deeper look at the second of CISA's five pillars: Devices. This section focuses on managing asset inventory and addressing your endpoint protection. You may consider both these topics and say to yourself, "we already have an inventory program and protection for the endpoints," however in most environments this is not even close to the required level of implementation.
 
