@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/en/about/_index.md",
+            "file": "content/en/blog/misc/zero-trust-devices.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/about/_index.md",
+                "file": "content/en/blog/misc/zero-trust-devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,8 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
+    "content/en/blog/misc/zero-trust-devices.md",
+    "content/en/blog/misc/zero-trust-identity.md",
     "content/en/about/_index.md",
     "content/en/_index.md",
     "content/en/docs/_index.md",
@@ -96,8 +98,6 @@
     "content/en/community/_index.md",
     "content/en/about/featured-background.png",
     "themes/docsy/assets/icons/logo.png",
-    "themes/docsy/assets/icons/logo.svg",
-    "themes/docsy/static/favicons/android-36x36.png",
-    "themes/docsy/static/favicons/android-48x48.png"
+    "themes/docsy/assets/icons/logo.svg"
   ]
 }
