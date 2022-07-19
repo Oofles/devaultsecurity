@@ -7,11 +7,9 @@
         "id": "4dde11f45beca6c0",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "content/en/blog/writeups/derbycon-puzzle.md",
-            "mode": "source",
-            "source": true
+            "file": "content/en/static/derbycon/cyberchef-analyzehash-md5.png"
           }
         }
       }
@@ -69,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/blog/writeups/derbycon-puzzle.md",
+                "file": "content/en/static/derbycon/cyberchef-analyzehash-md5.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,14 +87,14 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
-    "content/en/blog/engineering/tap-vs-span.md",
+    "content/en/static/derbycon/contents.png",
     "content/en/blog/writeups/derbycon-puzzle.md",
+    "content/en/blog/engineering/tap-vs-span.md",
     "content/en/static/derbycon/derbycon-page-hashes.png",
     "content/en/static/derbycon/derbycon-page-error.png",
     "content/en/static/derbycon/derbycon-cert.png",
     "content/en/static/derbycon/cyberchef-binary.png",
     "content/en/static/derbycon/cyberchef-analyzehash-md5.png",
-    "content/en/static/derbycon/contents.png",
     "content/en/blog/engineering/index-on-ingest-vs-search.md",
     "content/en/blog/misc/zero-trust-devices.md"
   ]
