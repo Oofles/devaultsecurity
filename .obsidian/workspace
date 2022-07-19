@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/en/blog/misc/zero-trust-devices.md",
+            "file": "content/en/blog/writeups/derbycon-puzzle.md",
             "mode": "source",
             "source": true
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 322.5
   },
   "right": {
     "id": "daeb2b6ad5e2378d",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/blog/misc/zero-trust-devices.md",
+                "file": "content/en/blog/writeups/derbycon-puzzle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
-    "content/en/blog/misc/zero-trust-devices.md",
-    "content/en/blog/misc/zero-trust-identity.md",
-    "content/en/about/_index.md",
-    "content/en/_index.md",
-    "content/en/docs/_index.md",
-    "content/en/docs/add-training-resources/_index.md",
-    "content/en/community/_index.md",
-    "content/en/about/featured-background.png",
-    "themes/docsy/assets/icons/logo.png",
-    "themes/docsy/assets/icons/logo.svg"
+    "content/en/blog/engineering/tap-vs-span.md",
+    "content/en/blog/writeups/derbycon-puzzle.md",
+    "content/en/static/derbycon/derbycon-page-hashes.png",
+    "content/en/static/derbycon/derbycon-page-error.png",
+    "content/en/static/derbycon/derbycon-cert.png",
+    "content/en/static/derbycon/cyberchef-binary.png",
+    "content/en/static/derbycon/cyberchef-analyzehash-md5.png",
+    "content/en/static/derbycon/contents.png",
+    "content/en/blog/engineering/index-on-ingest-vs-search.md",
+    "content/en/blog/misc/zero-trust-devices.md"
   ]
 }
