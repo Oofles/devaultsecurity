@@ -6,7 +6,7 @@ description: >
   There are many considerations when it comes to implementing DNS security protocols. You must understand before paying vendors for things you don't need!
 ---
 
-# Blog - The Tragedy of DNS Security
+# The Tragedy of DNS Security
 
 ## TL/DR - DNS Security is Bad (Currently...)!
 I'll defend all these thoughts, but in case you don't read any further than this, here's the highlights:
@@ -65,7 +65,7 @@ This is done to make the key signing and exchange more efficient, but it creates
 
 **Key Management and signing configuration**
 
-The most secure method is DNSSEC key signing is offline signing of static zone. This allows you to keep the key secure and disconnected from the network. Unfortunately, this also makes changing DNS information more complicated taking additional time and effort to apply changes. Still, this model works well as long as your DNS information does not change often.
+The most secure method of DNSSEC key signing is offline signing of static zones. This allows you to keep the key secure and disconnected from the network. Unfortunately, this also makes changing DNS information more complicated taking additional time and effort to apply changes. Still, this model works well as long as your DNS information does not change often.
 
 Live-signing DNS records is possible, but the configuration is much more complex and puts the private key at risk.
 

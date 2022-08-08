@@ -6,7 +6,7 @@ description: >
   This blog post is informational. The main focus is to explain the different forms of DNS security and encryption.
 ---
 
-# Blog - Explaining DNS Security
+# Explaining DNS Security
 This blog focuses on simply explaining some necessary concepts. The next blog dives into the considerations and problems when implementing these technologies:
 - [The Tragedy of DNS Security](https://www.devaultsecurity.com/blog/2022/08/08/the-tragedy-of-dns-security/)
 
