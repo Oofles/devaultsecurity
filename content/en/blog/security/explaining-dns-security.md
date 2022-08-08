@@ -8,7 +8,7 @@ description: >
 
 # Blog - Explaining DNS Security
 This blog focuses on simply explaining some necessary concepts. The next blog dives into the considerations and problems when implementing these technologies:
-- [INSERT BLOG LINK]
+- [The Tragedy of DNS Security](https://www.devaultsecurity.com/blog/2022/08/08/the-tragedy-of-dns-security/)
 
 These terms often get confused and misused. It's important to understand the functionality and goal of each:
 - **Verification**

@@ -21,7 +21,7 @@ I'll defend all these thoughts, but in case you don't read any further than this
 
 ## What is DNS Security?
 If you need to understand the differences in the type of DNS security and encryption, please read this blog post:
-- [Explaining DNS Security]
+- [Explaining DNS Security](https://www.devaultsecurity.com/blog/2022/08/07/explaining-dns-security/)
 
 ## Frame the Problem
 What is DNS security trying to solve? Answering this root question will be critical in understanding whether a potential solution is even worth implementing. All too often security individuals want to implement security because "security is good" and that's not a valid reason...
