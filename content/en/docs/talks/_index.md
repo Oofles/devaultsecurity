@@ -12,6 +12,12 @@ description: >
 ---
 
 ## 2022
+**National Cyber Summit** - 09/2022
+- [Level Up Your SOC: Guide for a Resilient Training Program](https://www.nationalcybersummit.com/Program/2022-Speakers)
+
+**CircleCityCon** - 09/2022
+- [Log4j Vulnerability: Emulation and Detection](https://circlecitycon.org/talks/#log4j)
+
 **Texas Information Security Forum (ISF)**  - 05/2022
 - [Handling Open-Source Code: Log4Shell, Shellshock, Heartbleed, and More!](https://dir.texas.gov/information-security/information-security-forum)
 

@@ -19,7 +19,7 @@ menu:
 <h1 class="text-center">Bio and Talks</h1>
 <h4 class="text-center">Bio</h4>
 <br>
-Brandon DeVault is an Sr. Security Author focusing on general blue team operations, incident response, and threat hunting at Pluralsight. He is also a member of the Florida Air National Guard and works as a threat hunter on a Mission Defense Team (MDT) defending North America’s air tracks. Prior to joining Pluralsight, Brandon worked with Elastic as an Education Architect creating and delivering security content. He also worked with Special Operations Command where he had two deployments to Afghanistan on deployable communications teams. His experience spans satellite communications, radio technologies, system and network administration. Brandon is also passionate about hardware hacking, soldering, hiking, and currently holds the GCIA, GCED, and Elastic Engineering certifications.
+Brandon DeVault is an Principal Security Author focusing on general blue team operations, incident response, and threat hunting at Pluralsight. He is also a member of the Florida Air National Guard and works as a threat hunter on a Mission Defense Team (MDT) defending North America’s air tracks. Prior to joining Pluralsight, Brandon worked with Elastic as an Education Architect creating and delivering security content. He also worked with Special Operations Command where he had two deployments to Afghanistan on deployable communications teams. His experience spans satellite communications, radio technologies, system and network administration. Brandon is also passionate about hardware hacking, soldering, hiking, and currently holds the GCIA, GCED, and Elastic Engineering certifications.
 <br><br>
 <h4 class="text-center"><b>Conferences and Workshops:</b></h4>
 <br>
@@ -34,9 +34,9 @@ To see a full list of my community engagements, see: <a href="/docs/talks/" styl
 <h1 class="text-center">Pluralsight</h1>
 <h5 class="text-center">Oct 2021 - Present</h5>
 <br>
-I currently work as a Sr. Security Author  for <a href="https://www.pluralsight.com/" style="color: #00FF00;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. 
+I currently work as a Principal Security Author  for <a href="https://www.pluralsight.com/" style="color: #00FF00;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. 
 <br><br>
-Check out some of the courses I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: #00FF00"><u>Private Training</u></a>.
+Check out some of the courses and labs I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: #00FF00"><u>Private Training</u></a>.
 {{% /blocks/lead %}}
 
 

@@ -24,9 +24,9 @@ linkTitle = "DeVaultSecurity"
 <h2><b>Upcoming Events and Talks</b></h2>
 <br>
 <br>
-Join me at <a href="https://circlecitycon.org/" style="color: #00FF00"><u>CircleCityCon 2022</u></a> where I'll be presenting a workshop on: 
+Join me at <a href="https://grrcon.com/presentations/#devault" style="color: #00FF00"><u>GrrCon 2022</u></a> where I'll be presenting a talk on: 
 <br><br>
-Log4j Vulnerability: Emulation and Detection
+Tracing Transactions: Threat Hunting for Financially Motivated APTs
 
 {{% /blocks/lead %}}
 
