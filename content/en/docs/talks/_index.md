@@ -12,6 +12,16 @@ description: >
 ---
 
 ## 2022
+**BSides Orlando** - 11/2022
+- [Workshop - Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://bsidesorlando.org/bsides-orlando/bsides-orlando-2022/workshops-2022/)
+
+**SuriCon 2022** - 11/2022
+- [Log4Shell Case Study: Using Suricata for Incident Response](https://suricon.net/agenda-athens/)
+- Video coming soon!
+
+**GrrCON** 10/2022
+- [Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://grrcon.com/presentations2022/)
+
 **National Cyber Summit** - 09/2022
 - [Level Up Your SOC: Guide for a Resilient Training Program](https://www.nationalcybersummit.com/Program/2022-Speakers)
 

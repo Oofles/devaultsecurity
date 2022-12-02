@@ -24,9 +24,9 @@ linkTitle = "DeVaultSecurity"
 <h2><b>Upcoming Events and Talks</b></h2>
 <br>
 <br>
-Join me at <a href="https://grrcon.com/presentations/#devault" style="color: #00FF00"><u>GrrCon 2022</u></a> where I'll be presenting a talk on: 
+Taking a break through the holidays - see you all in 2023!
 <br><br>
-Tracing Transactions: Threat Hunting for Financially Motivated APTs
+Crossing my fingers for my ShmooCon CFP Submission...
 
 {{% /blocks/lead %}}
 
@@ -39,10 +39,13 @@ Send me a message
 Take a look at by blog
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow me on Twitter" url="https://twitter.com/solderswag" %}}
+{{% blocks/feature icon="fab fa-twitter" title="Follow me on Twitter" url=https://infosec.exchange/@ViviCat %}}
 For thoughts, pictures, and nonsense...
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fab fa-lightbulb" title="Mastodon" url="https://twitter.com/solderswag" %}}
+Decentralized networking - making the swap!
+{{% /blocks/feature %}}
 
 {{< /blocks/section >}}
 
