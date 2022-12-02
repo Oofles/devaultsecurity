@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/docs/talks/_index.md",
+                "file": "content/en/_index.md",
                 "mode": "source",
                 "source": true
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/en/docs/talks/_index.md",
+                "file": "content/en/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,10 +97,10 @@
   },
   "active": "4dde11f45beca6c0",
   "lastOpenFiles": [
-    "content/en/_index.md",
-    "content/en/docs/_index.md",
     "content/en/about/_index.md",
     "content/en/docs/talks/_index.md",
+    "content/en/_index.md",
+    "content/en/docs/_index.md",
     "content/en/blog/security/tragedy-dns-security.md",
     "content/en/blog/security/explaining-dns-security.md",
     "content/en/blog/engineering/index-on-ingest-vs-search.md",

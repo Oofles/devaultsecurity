@@ -39,11 +39,7 @@ Send me a message
 Take a look at by blog
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow me on Twitter" url=https://infosec.exchange/@ViviCat %}}
-For thoughts, pictures, and nonsense...
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-lightbulb" title="Mastodon" url="https://twitter.com/solderswag" %}}
+{{% blocks/feature icon="fab fa-twitter" title="Mastodon" rel="me" url=https://infosec.exchange/@ViviCat %}}
 Decentralized networking - making the swap!
 {{% /blocks/feature %}}
 
