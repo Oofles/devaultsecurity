@@ -11,6 +11,10 @@ description: >
 
 ---
 
+## 2023
+**ShmooCon** - 01/2023
+- [Les Miserable Persistence: Hunting Through Scheduled Tasks](https://www.shmoocon.org/speakers/#lespersistence)
+
 ## 2022
 **BSides Orlando** - 11/2022
 - [Workshop - Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://bsidesorlando.org/bsides-orlando/bsides-orlando-2022/workshops-2022/)
