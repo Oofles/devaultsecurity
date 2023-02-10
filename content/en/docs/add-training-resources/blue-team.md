@@ -23,4 +23,5 @@ description: >
 - [Elastic](https://www.elastic.co/training/free)
 - [SANS Cyber Aces](https://www.sans.org/cyberaces/)
 - [Springboard](https://www.springboard.com/resources/learning-paths/cybersecurity-foundations/)
+- [OST2 - Open Security Training (Excellent assembly & firmware courses)](https://ost2.fyi/)
 - [Open Security Training](https://opensecuritytraining.info/Training.html)
