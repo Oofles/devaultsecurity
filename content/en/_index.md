@@ -11,9 +11,9 @@ linkTitle = "DeVaultSecurity"
 	</a>
 	<p class="lead mt-5"><b>New Course!</b>
 	<br>
-	<a href="https://www.pluralsight.com/courses/threat-hunting-network-hunting">Threat Hunting: Network Hunting</a>
+	<a href="https://www.pluralsight.com/courses/threat-hunting-review-automate-improve">Threat Hunting: Review, Automate, and Improve</a>
 	</p>
-	<img src="/static/threat-hunting-network-hunting.png"</img>
+	<img src="/static/th-review.png"</img>
 </div>
 {{< /blocks/cover >}}
 
@@ -24,9 +24,9 @@ linkTitle = "DeVaultSecurity"
 <h2><b>Upcoming Events and Talks</b></h2>
 <br>
 <br>
-Taking a break through the holidays - see you all in 2023!
+CFP Submissions are in!
 <br><br>
-Crossing my fingers for my ShmooCon CFP Submission...
+Check out my ShmooCon talk from January: <a href="https://www.youtube.com/watch?v=9ZJkXmhogHQ">Hunting for Schedule Tasks</a>
 
 {{% /blocks/lead %}}
 

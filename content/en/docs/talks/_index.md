@@ -13,15 +13,16 @@ description: >
 
 ## 2023
 **ShmooCon** - 01/2023
-- [Les Miserable Persistence: Hunting Through Scheduled Tasks](https://www.shmoocon.org/speakers/#lespersistence)
+- [Les Miserable Persistence: Hunting Through Scheduled Tasks](https://www.youtube.com/watch?v=9ZJkXmhogHQ)
+- Video!
 
 ## 2022
 **BSides Orlando** - 11/2022
 - [Workshop - Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://bsidesorlando.org/bsides-orlando/bsides-orlando-2022/workshops-2022/)
 
 **SuriCon 2022** - 11/2022
-- [Log4Shell Case Study: Using Suricata for Incident Response](https://suricon.net/agenda-athens/)
-- Video coming soon!
+- [Log4Shell Case Study: Using Suricata for Incident Response](https://www.youtube.com/watch?v=VnogtET3eQw)
+- Video!
 
 **GrrCON** 10/2022
 - [Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://grrcon.com/presentations2022/)
