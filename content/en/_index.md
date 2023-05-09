@@ -9,11 +9,11 @@ linkTitle = "DeVaultSecurity"
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/about" >}}">
 		About Me <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<p class="lead mt-5"><b>New Course!</b>
+	<p class="lead mt-5"><b>Check out my latest courses!</b>
 	<br>
-	<a href="https://www.pluralsight.com/courses/threat-hunting-review-automate-improve">Threat Hunting: Review, Automate, and Improve</a>
+	<a href="https://app.pluralsight.com/profile/author/brandon-devault">Authored Pluralsight Courses</a>
 	</p>
-	<img src="/static/th-review.png"</img>
+	<img src="/static/new-courses-apr-23.png"</img>
 </div>
 {{< /blocks/cover >}}
 
