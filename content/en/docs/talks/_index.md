@@ -12,6 +12,13 @@ description: >
 ---
 
 ## 2023
+
+**GrrCON** - 09/2023
+- [The Great Task Heist: Stealing the Spotlight on Scheduled Tasks](https://grrcon.com/presentations/#devault)
+
+**DEF CON 31** - 08/2023
+- [Active Directory Attacks: The Good, The Bad, and the LOLwut](https://forum.defcon.org/node/246032)
+
 **ShmooCon** - 01/2023
 - [Les Miserable Persistence: Hunting Through Scheduled Tasks](https://www.youtube.com/watch?v=9ZJkXmhogHQ)
 - Video!

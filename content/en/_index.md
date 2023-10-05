@@ -13,7 +13,7 @@ linkTitle = "DeVaultSecurity"
 	<br>
 	<a href="https://app.pluralsight.com/profile/author/brandon-devault">Authored Pluralsight Courses</a>
 	</p>
-	<img src="/static/new-courses-apr-23.png"</img>
+	<img src="/static/new-courses-sep-23.png"</img>
 </div>
 {{< /blocks/cover >}}
 
@@ -24,9 +24,9 @@ linkTitle = "DeVaultSecurity"
 <h2><b>Upcoming Events and Talks</b></h2>
 <br>
 <br>
-CFP Submissions are in!
+BSides Orlando 2023 (October 6th, 2023)
 <br><br>
-Check out my ShmooCon talk from January: <a href="https://www.youtube.com/watch?v=9ZJkXmhogHQ">Hunting for Schedule Tasks</a>
+Active Directory Post-Exploitation Attack/Defend Workshop: <a href="https://www.linkedin.com/company/bsidesorl/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BGX%2FNCG6USQ2N3AAj20Lc9Q%3D%3D">Register Here</a>
 
 {{% /blocks/lead %}}
 
