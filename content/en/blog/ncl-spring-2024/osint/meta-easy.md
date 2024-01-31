@@ -13,27 +13,27 @@ This section has a downloadable image (Meta.jpg) and asks about some of the meta
 ![image](/static/ncl/meta.png)
 
 
-Q1: When was the image created? Round down to the nearest minute
+**Q1: When was the image created? Round down to the nearest minute**
 
 A: `May 15th, 2015 2:14am`
 
-Q2: What are the dimensions of the image? (ex: 800x600)
+**Q2: What are the dimensions of the image? (ex: 800x600)**
 
 A: `1024x768`
 
-Q3: What is the make of the camera that took the picture?
+**Q3: What is the make of the camera that took the picture?**
 
 A: `Apple`
 
-Q4: What is the model of the camera that took the picture?
+**Q4: What is the model of the camera that took the picture?**
 
 A: `Apple iPhone 5`
 
-Q5: What is the exposure time for the picture? (ex: 1/200)
+**Q5: What is the exposure time for the picture? (ex: 1/200)**
 
 A: `1/640`
 
-Q6: What are the GPS coordinates where the was the picture taken? (Any standard format is acceptable)
+**Q6: What are the GPS coordinates where the was the picture taken? (Any standard format is acceptable)**
 
 A: `39.875, 20.01`
 
