@@ -40,7 +40,7 @@ A: `376 bytes`
 
 - The SQL Slammer worm, also known as Sapphire, was remarkably small in size, totaling only 376 bytes. This extremely compact size contributed to its rapid propagation and significant impact on global Internet traffic in 2003.
 
-Q6: Complete the sentence: "Samy is my..."
+**Q6: Complete the sentence: "Samy is my..."**
 
 A: `hero`
 
