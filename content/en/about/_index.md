@@ -19,7 +19,7 @@ menu:
 <h1 class="text-center">Bio and Talks</h1>
 <h4 class="text-center">Bio</h4>
 <br>
-Brandon DeVault is an Principal Security Author focusing on general blue team operations, incident response, and threat hunting at Pluralsight. He is also a member of the Florida Air National Guard and works as a threat hunter on a Mission Defense Team (MDT) defending North America’s air tracks. Prior to joining Pluralsight, Brandon worked with Elastic as an Education Architect creating and delivering security content. He also worked with Special Operations Command where he had two deployments to Afghanistan on deployable communications teams. His experience spans satellite communications, radio technologies, system and network administration. Brandon is also passionate about hardware hacking, soldering, hiking, and currently holds the GCIA, GCED, and Elastic Engineering certifications.
+Brandon DeVault is a Security Researcher at CrowdStrike focusing on threat actor tactics and threat hunting techniques. He is also a member of the Florida Air National Guard and works as a threat hunter on a Mission Defense Team (MDT) defending North America’s air tracks. Prior to joining Pluralsight, Brandon worked with Pluralsight as a Principal Security Author and Elastic as an Education Architect. He also worked with Special Operations Command where he had two deployments to Afghanistan on deployable communications teams. His experience spans satellite communications, radio technologies, system and network administration. Brandon is also passionate about hardware hacking, soldering, hiking, and currently holds the GCIA, GCED, and Elastic Engineering certifications.
 <br><br>
 <h4 class="text-center"><b>Conferences and Workshops:</b></h4>
 <br>
@@ -29,12 +29,21 @@ To see a full list of my community engagements, see: <a href="/docs/talks/" styl
 
 
 
+{{< blocks/lead color="dark" >}}
+<h1 class="text-center">CrowdStrike</h1>
+<h5 class="text-center">Nov 2023 - Present</h5>
+<br><br>
+I am currently a Senior Security Researcher for <a href="https://www.crowdstrike.com/en-us/" style="color: #00FF00;"><u>CrowdStrike</u> supporting OverWatch (Threat Hunting). 
+{{< /blocks/lead >}}
 
-{{% blocks/lead color="dark" %}}
+
+
+
+{{% blocks/lead color="primary" %}}
 <h1 class="text-center">Pluralsight</h1>
-<h5 class="text-center">Oct 2021 - Present</h5>
+<h5 class="text-center">Oct 2021 - Nov 2023</h5>
 <br>
-I currently work as a Principal Security Author  for <a href="https://www.pluralsight.com/" style="color: #00FF00;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. 
+I worked full-time as a Principal Security Author  for <a href="https://www.pluralsight.com/" style="color: #00FF00;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. I currently still work part-time for Pluralsight as a contract author. 
 <br><br>
 Check out some of the courses and labs I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: #00FF00"><u>Private Training</u></a>.
 {{% /blocks/lead %}}
@@ -43,7 +52,7 @@ Check out some of the courses and labs I've authored here: <a href="https://app.
 
 
 
-{{< blocks/lead color="primary" >}}
+{{< blocks/lead color="dark" >}}
 <h1 class="text-center">Florida Air National Guard</h1>
 <h5 class="text-center">Jul 2008 - Present</h5>
 <br><br>
@@ -57,7 +66,7 @@ I developed the operational training plan for AFNORTH's cyber security teams foc
 
 
 
-{{% blocks/lead color="dark" %}}
+{{% blocks/lead color="primary" %}}
 <h1 class="text-center">Elasticsearch</h1>
 <h5 class="text-center">Aug 2019 - Oct 2021</h5>
 <br>  <br>
@@ -69,7 +78,7 @@ I also served as a community manager (and remain an active member) for the <a hr
 
 
 
-{{< blocks/lead color="primary" >}}
+{{< blocks/lead color="dark" >}}
 <h1 class="text-center">Perched</h1>
 <h5 class="text-center">Mar 2019 - Aug 2019</h5>
 <br><br>
@@ -84,7 +93,7 @@ In August 2019, Perched was acquired by Elastic and it's been an awesome journey
 
 
 
-{{< blocks/lead color="dark" >}}
+{{< blocks/lead color="primary" >}}
 <h1 class="text-center">Harris Corporation</h1>
 <h5 class="text-center">Dec 2011 - Sep 2016</h5>
 <br><br>
