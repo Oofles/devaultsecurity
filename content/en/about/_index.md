@@ -33,7 +33,7 @@ To see a full list of my community engagements, see: <a href="/docs/talks/" styl
 <h1 class="text-center">CrowdStrike</h1>
 <h5 class="text-center">Nov 2023 - Present</h5>
 <br><br>
-I am currently a Senior Security Researcher for <a href="https://www.crowdstrike.com/en-us/" style="color: #00FF00;"><u>CrowdStrike</u> supporting OverWatch (Threat Hunting). 
+I am currently a Senior Security Researcher for <a href="https://www.crowdstrike.com/en-us/" style="color: #00FF00;"><u>CrowdStrike</u></a> supporting OverWatch (Threat Hunting). 
 {{< /blocks/lead >}}
 
 
