@@ -45,7 +45,7 @@ I am currently a Senior Security Researcher for <a href="https://www.crowdstrike
 <br>
 I worked full-time as a Principal Security Author  for <a href="https://www.pluralsight.com/" style="color: #00FF00;"><u>Pluralsight</u></a> performing security research and focusing on general blue team operations, incident response, and threat hunting. I currently still work part-time for Pluralsight as a contract author. 
 <br><br>
-Check out some of the courses and labs I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: #00FF00"><u>Private Training</u></a>.
+Check out some of the courses and labs I've authored here: <a href="https://app.pluralsight.com/profile/author/brandon-devault" style="color: #00FF00"><u>Author Profile</u></a>.
 {{% /blocks/lead %}}
 
 
