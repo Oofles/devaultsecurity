@@ -13,7 +13,7 @@ linkTitle = "DeVaultSecurity"
 	<br>
 	<a href="https://app.pluralsight.com/profile/author/brandon-devault">Authored Pluralsight Courses</a>
 	</p>
-	<img src="/static/new-courses-sep-23.png"</img>
+	<img src="/static/new-courses-jan-24.png"</img>
 </div>
 {{< /blocks/cover >}}
 
@@ -21,7 +21,7 @@ linkTitle = "DeVaultSecurity"
 
 
 {{% blocks/lead color="primary" %}}
-<h2><b>Upcoming Events and Talks</b></h2>
+<h2><b>Previous Events and Talks</b></h2>
 <br>
 <br>
 BSides Orlando 2023 (October 6th, 2023)
