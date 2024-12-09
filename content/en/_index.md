@@ -13,7 +13,7 @@ linkTitle = "DeVaultSecurity"
 	<br>
 	<a href="https://app.pluralsight.com/profile/author/brandon-devault">Authored Pluralsight Courses</a>
 	</p>
-	<img src="/static/new-courses-jan-24.png"</img>
+	<img src="/static/securityx-path.png"</img>
 </div>
 {{< /blocks/cover >}}
 
@@ -24,9 +24,9 @@ linkTitle = "DeVaultSecurity"
 <h2><b>Previous Events and Talks</b></h2>
 <br>
 <br>
-BSides Orlando 2023 (October 6th, 2023)
+GrrCON 2024 (September 26-27, 2024)
 <br><br>
-Active Directory Post-Exploitation Attack/Defend Workshop: <a href="https://www.linkedin.com/company/bsidesorl/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BGX%2FNCG6USQ2N3AAj20Lc9Q%3D%3D">Register Here</a>
+<a href="https://grrcon.com/presentations/#devault">The Azure Necronomicon: Unraveling Identity’s Cosmic Horror</a>
 
 {{% /blocks/lead %}}
 
@@ -39,8 +39,8 @@ Send me a message
 Take a look at by blog
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Mastodon" rel="me" url=https://infosec.exchange/@ViviCat %}}
-Decentralized networking - making the swap!
+{{% blocks/feature icon="fab fa-twitter" title="X" rel="me" url=https://x.com/DeVaultSecurity %}}
+The everything app?
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
