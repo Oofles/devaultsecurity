@@ -11,10 +11,15 @@ description: >
 
 ---
 
+## 2024 
+
+**GrrCON** - 09/2024
+- [The Azure Necronomicon: Unraveling Identity’s Cosmic Horror](https://grrcon.com/presentations/#devault)
+
 ## 2023
 
 **GrrCON** - 09/2023
-- [The Great Task Heist: Stealing the Spotlight on Scheduled Tasks](https://grrcon.com/presentations/#devault)
+- [The Great Task Heist: Stealing the Spotlight on Scheduled Tasks](https://grrcon.com/presentations2023/#devault)
 
 **DEF CON 31** - 08/2023
 - [Active Directory Attacks: The Good, The Bad, and the LOLwut](https://forum.defcon.org/node/246032)
@@ -32,7 +37,7 @@ description: >
 - Video!
 
 **GrrCON** 10/2022
-- [Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://grrcon.com/presentations2022/)
+- [Tracing Transactions: Threat Hunting for Financially Motivated APTs](https://grrcon.com/presentations2022/#devault)
 
 **National Cyber Summit** - 09/2022
 - [Level Up Your SOC: Guide for a Resilient Training Program](https://www.nationalcybersummit.com/Program/2022-Speakers)
