@@ -2,7 +2,6 @@ import { defineConfig } from "astro/config"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import mdx from "@astrojs/mdx"
-import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import solidJs from "@astrojs/solid-js"
 
@@ -11,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // https://astro.build/config
 export default defineConfig({
   site: "https://devaultsecurity.com",
-  integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
+  integrations: [mdx(), solidJs(), tailwind({ applyBaseStyles: false })],
   vite: {
     resolve: {
       alias: {
