@@ -1,9 +1,12 @@
 import { defineConfig } from "astro/config"
-import { fileURLToPath } from 'node:url'
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import solidJs from "@astrojs/solid-js"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,12 +15,12 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-        '@layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
-        '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
-        '@lib': fileURLToPath(new URL('./src/lib', import.meta.url)),
-        '@consts': fileURLToPath(new URL('./src/consts.ts', import.meta.url)),
-        '@types': fileURLToPath(new URL('./src/types.ts', import.meta.url)),
+        '@': path.resolve(__dirname, './src'),
+        '@layouts': path.resolve(__dirname, './src/layouts'),
+        '@components': path.resolve(__dirname, './src/components'),
+        '@lib': path.resolve(__dirname, './src/lib'),
+        '@consts': path.resolve(__dirname, './src/consts.ts'),
+        '@types': path.resolve(__dirname, './src/types.ts'),
       }
     }
   }
