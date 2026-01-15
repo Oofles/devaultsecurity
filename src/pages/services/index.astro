@@ -1,0 +1,57 @@
+---
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { SERVICES } from "@consts"
+---
+
+<PageLayout title={SERVICES.TITLE} description={SERVICES.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      {SERVICES.TITLE}
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      <article class="prose dark:prose-invert max-w-none">
+        <h2>DeVault Security LLC</h2>
+
+        <p class="text-lg">
+          Professional cybersecurity consulting and penetration testing services specializing in
+          threat hunting, incident response, and security operations.
+        </p>
+
+        <h3>Consulting Services</h3>
+        <ul>
+          <li><strong>Threat Hunting</strong> - Proactive hunting for advanced threats in your environment</li>
+          <li><strong>Incident Response</strong> - Rapid response and forensic analysis for security incidents</li>
+          <li><strong>Security Operations</strong> - SOC design, implementation, and optimization</li>
+          <li><strong>Detection Engineering</strong> - Custom detection rules and alerting strategies</li>
+          <li><strong>Security Training</strong> - Custom training programs for security teams</li>
+        </ul>
+
+        <h3>Penetration Testing</h3>
+        <ul>
+          <li><strong>Network Penetration Testing</strong> - Internal and external network assessments</li>
+          <li><strong>Web Application Testing</strong> - Comprehensive web application security assessments</li>
+          <li><strong>Active Directory Assessments</strong> - Windows domain security evaluations</li>
+          <li><strong>Cloud Security Assessments</strong> - Azure, AWS, and multi-cloud environments</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <p>
+          With years of experience in cybersecurity, including speaking at major conferences like
+          DEF CON, ShmooCon, and GrrCON, and as a content creator for Pluralsight, I bring
+          real-world expertise to every engagement.
+        </p>
+
+        <h3>Get in Touch</h3>
+        <p>
+          Interested in working together? Connect with me on
+          <a href="https://www.linkedin.com/in/brandondevault/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          to discuss your security needs.
+        </p>
+      </article>
+    </div>
+  </BottomLayout>
+</PageLayout>

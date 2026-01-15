@@ -1,0 +1,75 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+import { PROJECTS } from "@consts";
+---
+
+<PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      {PROJECTS.TITLE}
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      <article class="prose dark:prose-invert max-w-none">
+        <p class="text-lg mb-8">
+          Curated list of cybersecurity training resources, tools, and learning platforms for defensive
+          and offensive security operations.
+        </p>
+
+        <h2>Blue Team Training</h2>
+        <p><em>Defensive Cyber Operations</em></p>
+
+        <h3>Subscription-based</h3>
+        <ul>
+          <li><strong><a href="https://www.pluralsight.com" target="_blank" rel="noopener noreferrer">Pluralsight</a></strong> - Comprehensive security training platform</li>
+          <li><strong><a href="https://www.cybrary.it/" target="_blank" rel="noopener noreferrer">Cybrary</a></strong> - Free and paid courses, decent content for beginners</li>
+          <li><strong><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></strong> - Pay-per-course model, quality varies</li>
+          <li><strong><a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer">LinkedIn Learning</a></strong> - Management and soft skills focused</li>
+        </ul>
+
+        <h3>Individual Paid Courses</h3>
+        <ul>
+          <li><strong><a href="https://cyberdefenders.org" target="_blank" rel="noopener noreferrer">Cyber Defenders</a></strong> - Free CTF-style challenges for blue team, paid certification option</li>
+          <li><strong><a href="https://academy.tcm-sec.com/courses" target="_blank" rel="noopener noreferrer">TCM Security</a></strong> - Pay-per-course model with excellent reviews</li>
+          <li><strong><a href="https://www.antisyphontraining.com/" target="_blank" rel="noopener noreferrer">Antisyphon InfoSec Training</a></strong> - Pay what you can model, very accessible</li>
+          <li><strong><a href="https://secureninja.com/" target="_blank" rel="noopener noreferrer">SecureNinja</a></strong> - Live training options, certification prep</li>
+        </ul>
+
+        <h3>Free Training</h3>
+        <ul>
+          <li><strong><a href="https://training.linuxfoundation.org/resources/?_sft_content_type=free-course" target="_blank" rel="noopener noreferrer">Linux Foundation</a></strong> - Mix of training options</li>
+          <li><strong><a href="https://www.elastic.co/training/free" target="_blank" rel="noopener noreferrer">Elastic</a></strong> - Engineering-focused courses on security stack capabilities</li>
+          <li><strong><a href="https://www.sans.org/cyberaces/" target="_blank" rel="noopener noreferrer">SANS Cyber Aces</a></strong> - Good foundation courses</li>
+          <li><strong><a href="https://ost2.fyi/" target="_blank" rel="noopener noreferrer">OST2 - Open Security Training</a></strong> - Excellent assembly and firmware courses</li>
+          <li><strong><a href="https://opensecuritytraining.info/Training.html" target="_blank" rel="noopener noreferrer">Open Security Training</a></strong> - Predecessor to OST2, still has available courses</li>
+        </ul>
+
+        <h2 class="mt-12">Red Team Training</h2>
+        <p><em>Offensive Cyber Operations</em></p>
+
+        <h3>Range / CTF Practice</h3>
+        <ul>
+          <li><strong><a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer">Try Hack Me</a></strong> - Guided learning with hands-on labs</li>
+          <li><strong><a href="https://www.hackthebox.com/" target="_blank" rel="noopener noreferrer">Hack the Box</a></strong> - Challenging CTF-style platform</li>
+          <li><strong><a href="https://www.offensive-security.com/labs/" target="_blank" rel="noopener noreferrer">Proving Grounds</a></strong> - Practice labs from Offensive Security</li>
+        </ul>
+
+        <h3>Certification</h3>
+        <ul>
+          <li><strong><a href="https://www.offensive-security.com/" target="_blank" rel="noopener noreferrer">Offensive Security</a></strong> - Industry-leading penetration testing certifications (OSCP, OSEP, etc.)</li>
+        </ul>
+
+        <h2 class="mt-12">Other Training Resources</h2>
+
+        <h3>Military Training Resources</h3>
+        <ul>
+          <li><strong><a href="https://fedvte.usalearning.gov/" target="_blank" rel="noopener noreferrer">FedVTE</a></strong> - Federal Virtual Training Environment</li>
+          <li><strong><a href="https://cyrin.atcorp.com/" target="_blank" rel="noopener noreferrer">CYRIN Online Training</a></strong> - Advanced cyber range training</li>
+        </ul>
+      </article>
+    </div>
+  </BottomLayout>
+</PageLayout>

@@ -1,0 +1,87 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { WORK } from "@consts"
+
+const collection = await getCollection("work")
+
+collection.sort((a, b) => new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime())
+
+const work = await Promise.all(
+  collection.map(async (item) => {
+    const { Content } = await item.render()
+    return { ...item, Content }
+  })
+)
+
+function formatWorkDate(input: Date | string) {
+  if (typeof input === "string") return input
+
+  const month = input.toLocaleDateString("en-US", {
+    month: "short",
+  })
+
+  const year = new Date(input).getFullYear()
+  return `${month} ${year}`
+}
+---
+
+<PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      {WORK.TITLE}
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      <article class="prose dark:prose-invert max-w-none mb-12">
+        <h2>Bio</h2>
+        <p>
+          Brandon DeVault is a Security Researcher at CrowdStrike focusing on threat actor tactics and threat hunting techniques.
+          He is also a member of the Florida Air National Guard and works as a threat hunter on a Mission Defense Team (MDT) defending
+          North America's air tracks. Prior to joining CrowdStrike, Brandon worked with Pluralsight as a Principal Security Author and
+          Elastic as an Education Architect. He also worked with Special Operations Command where he had two deployments to Afghanistan
+          on deployable communications teams.
+        </p>
+        <p>
+          His experience spans satellite communications, radio technologies, system and network administration. Brandon is also passionate
+          about hardware hacking, soldering, hiking, and currently holds the GCIA, GCED, and Elastic Engineering certifications.
+        </p>
+
+        <h2 class="mt-12">Speaking Engagements</h2>
+        <p class="mb-4">
+          Brandon has presented at major security conferences including DEF CON, ShmooCon, GrrCON, RSA, BSides, and more.
+          View his <a href="https://www.slideshare.net/BrandonDeVault/presentations" target="_blank" rel="noopener noreferrer">presentation slides on SlideShare</a>.
+        </p>
+        <p>
+          For a complete list of talks and presentations, including conference workshops and community engagements from 2018-2024,
+          see the full conference speaking history in the original Hugo site's <code>/docs/talks/</code> section.
+        </p>
+
+        <h2 class="mt-12">Work Experience</h2>
+      </article>
+    </div>
+    <ul>
+      {
+        work.map((entry) => (
+          <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
+            <div class="text-sm uppercase mb-4">
+              {formatWorkDate(entry.data.dateStart)} - {formatWorkDate(entry.data.dateEnd)}
+            </div>
+            <div class="text-black dark:text-white font-semibold">
+              {entry.data.company}
+            </div>
+            <div class="text-sm font-semibold">
+              {entry.data.role}
+            </div>
+            <article class="prose dark:prose-invert">
+              <entry.Content />
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </BottomLayout>
+</PageLayout>
