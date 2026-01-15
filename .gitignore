@@ -25,12 +25,11 @@ pnpm-debug.log*
 # Hugo backup content (for migration reference only)
 hugo-content-backup/
 
-# Old Hugo files
-themes/
-layouts/
-config.toml
-export.sh
-deploy.sh
+# Old Hugo files (root level only)
+/themes/
+/config.toml
+/export.sh
+/deploy.sh
 *.tar.gz
 
 # IDE
